@@ -4,6 +4,11 @@
 
 1. [Magnet](https://apps.apple.com/tw/app/magnet/id441258766?mt=12)
 
+## Is Apple Silicon ready?
+
+You can check the app which has prepared already in Apple Silicon in the following URL:
+
+https://isapplesiliconready.com/
 
 ## Terminal Setting
 

@@ -47,3 +47,19 @@ In installation, you can install Homebrew by *bash* or *zsh*, and [the different
         # echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
         # eval "$(/opt/homebrew/bin/brew shellenv)"
         # brew help
+
+
+## [Homebrew-Cask](https://github.com/Homebrew/homebrew-cask) (@Homebrew)
+
+Homebrew Cask extends Homebrew, and it helps that you don't need to click, drag and drop while install some GUI applications.
+
+    # brew install cask
+
+Then it will install the *formulae*s as following:
+
+    bdw-gc      gmp         libevent    m4          readline
+    c-ares      gnutls      libffi      nettle      unbound
+    cask        guile       libidn2     nghttp2     coreutils
+    jansson     libtasn1    openssl@1.1 emacs       jemalloc
+    libtool     p11-kit     gettext     libev       libunistring
+    pkg-config

@@ -77,4 +77,4 @@ iTerm2 is a replacement for Terminal. It brings the terminal into something mode
 
         # brew install --cask iterm2
 
-After installed, you can get a configuration file *.zprofile* in *~/*, and also can see Item2 has installed in *Application* file already.
+After installed, you can get a new folder *.config* which is contains iTrem2's information, and also can see Item2 has installed in *Application* file already.

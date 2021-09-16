@@ -1,7 +1,9 @@
 # Mac-M1-First-Setting-Guide
 
 - [Recommended Apps in App Store](#recommended-apps-in-app-store)
+- [Is Apple Silicon Ready?](#is-apple-silicon-ready)
 - [Terminal Setting](#terminal-setting)
+- [Oh-My-Zsh](#oh-my-zsh)
 - [Homebrew](#homebrew)
     - [Homebrew-Cask](#homebrew-cask-homebrew)
         - [iTerm2](#iterm2-cask)
@@ -10,7 +12,7 @@
 
 1. [Magnet](https://apps.apple.com/tw/app/magnet/id441258766?mt=12)
 
-## Is Apple Silicon ready?
+## Is Apple Silicon Ready?
 
 You can check the app which has prepared already in Apple Silicon in the following URL:
 
@@ -23,6 +25,36 @@ https://isapplesiliconready.com/
         albert@MyMac ~ % echo $PS1      // %n@%m %1~ %#
         albert@MyMac ~ % export PS1="%n#"
         albert#
+
+
+## [Oh-My-Zsh](https://github.com/ohmyzsh/ohmyzsh)
+
+Oh-My-Zsh manages the config for zsh. It makes you easily to set the zsh's theme, plugins, etc.
+
+    # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        
+Then the *Terminal.app* or *iTerm* will change another theme. Also, you can find the configuration *.zshrc* and *.zcompdump-\** in the path
+*~/*. At the same time, there is a file *.oh-my-zsh* contained *Oh-My-Zsh* resources.
+
+    .zshrc          -> save theme here.
+    .zcompdump-*    -> speed up the running of compinit which initializes the shell completion in zsh
+
+Official Themes: https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+
+External Themes: https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes
+
+Now, just pick a theme you like, and save the theme into your *"~/.oh-my-zsh/themes/"* directory. (I prefer [af-magic](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#af-magic))
+
+So, how to change the theme, just follow the steps:
+
+        # vim ~/.zshrc
+        
+        // add or modify the property 'ZSH_THEME', and ':wq' to save and leave this config
+        --------------------------------------------------
+        ZSH_THEME="af-magic.zsh-theme"
+        --------------------------------------------------
+        
+        # source ~/.zshrc
 
 
 ## [Homebrew](https://docs.brew.sh/)
@@ -75,6 +107,6 @@ Then it will install the *formulae*s as following:
 
 iTerm2 is a replacement for Terminal. It brings the terminal into something modern features, eg. split panes, search hightlight, autocomplete, etc.
 
-        # brew install --cask iterm2
+    # brew install --cask iterm2
 
-After installed, you can get a new folder *.config* which is contains iTrem2's information, and also can see Item2 has installed in *Application* file already.
+After installed, you can get a new folder *.config* which is contains iTerm2's information, and also can see Item2 has installed in *Application* file already.

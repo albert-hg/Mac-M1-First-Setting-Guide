@@ -1,5 +1,11 @@
 # Mac-M1-First-Setting-Guide
 
+- [Recommended Apps in App Store](#recommended-apps-in-app-store)
+- [Terminal Setting](#terminal-setting)
+- [Homebrew](#homebrew)
+    - [Homebrew-Cask](#homebrew-cask-homebrew)
+        - [iTerm2](#iterm2-cask)
+
 ## Recommended Apps in App Store
 
 1. [Magnet](https://apps.apple.com/tw/app/magnet/id441258766?mt=12)
@@ -19,7 +25,7 @@ https://isapplesiliconready.com/
         albert#
 
 
-## Homebrew
+## [Homebrew](https://docs.brew.sh/)
 
 Homebrew is a tool for managing those applications on your mac. It has supported on Mac M1, but it will have different installation path base on the chips:
 
@@ -35,7 +41,7 @@ In installation, you can install Homebrew by *bash* or *zsh*, and [the different
 
 
 
-### [Install Steps (M1)](https://docs.brew.sh/Installation)
+Following those [Install Steps (M1)](https://docs.brew.sh/Installation) as below: 
 
 1. Open your *terminal.app*
 1. Install Homebrew in one line by *bash* or *zsh* (here use *bash*)
@@ -63,3 +69,12 @@ Then it will install the *formulae*s as following:
     jansson     libtasn1    openssl@1.1 emacs       jemalloc
     libtool     p11-kit     gettext     libev       libunistring
     pkg-config
+
+
+## [iTerm2](https://iterm2.com/) (@Cask)
+
+iTerm2 is a replacement for Terminal. It brings the terminal into something modern features, eg. split panes, search hightlight, autocomplete, etc.
+
+        # brew install --cask iterm2
+
+After installed, you can get a configuration file *.zprofile* in *~/*, and also can see Item2 has installed in *Application* file already.

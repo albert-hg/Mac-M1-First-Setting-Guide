@@ -9,6 +9,8 @@
         - [iTerm2](#iterm2-cask)
         - [Visual Studio Code](#visual-studio-code-cask)
         - [Docker](#docker-cask)
+        - [Java](#java-zulu-cask)
+    - [JEnv](#)
 - Recommand Applications From The Official Page
     - [Fork](fork)
 
@@ -134,6 +136,50 @@ Now (2021-09-17) still not support in native apple sillicon. So, if you want to 
     # brew install --cask docker
 
 If you really don't know how to use docker, please see my article :) https://medium.com/alberthg-docker-notes
+
+
+## Java [Zulu](https://www.azul.com/downloads/?package=jdk) (@Cask)
+
+There have different JDK builds, like openjdk, zulu, adoptopenjdk etc. Here I prefer to use *zulu*.
+
+[Java 8](https://github.com/Homebrew/homebrew-cask-versions/blob/master/Casks/zulu8.rb)
+
+    # brew install --cask homebrew/cask-versions/zulu8
+
+[Java 11](https://github.com/Homebrew/homebrew-cask-versions/blob/master/Casks/zulu11.rb)
+
+    # brew install --cask homebrew/cask-versions/zulu11
+
+While using homebrew to install jdk, you can find the unpackaging folder in the path:
+
+    # ls /Library/Java/JavaVirtualMachines/
+
+And find *JAVA_HOME* like:
+
+    # /usr/libexec/java_home -V
+
+
+## [JEnv](https://github.com/jenv/jenv)
+
+    # brew install jenv
+    # echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+    # echo 'eval "$(jenv init -)"' >> ~/.zshrc
+
+Set ${JAVA_HOME} by jenv
+
+    # jenv enable-plugin export
+    # exec $SHELL -l
+
+Then restart the terminal, and make sure you already [installed jdk](#java-zulu-cask) like *zulu*:
+
+    # jenv doctor
+    # jenv add /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+    # jenv add /Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
+
+Now, you can check the jdk's version you have, and change the version you want to use:
+
+    # jenv versions
+    # jenv local zulu64-1.8.0.302
 
 
 ## [Fork](https://git-fork.com/)

@@ -8,18 +8,22 @@
     - [Homebrew-Cask](#homebrew-cask-homebrew)
         - [iTerm2](#iterm2-cask)
         - [Visual Studio Code](#visual-studio-code-cask)
-- Install From Official Page
-    - [Docker](#docker)
+        - [Docker](#docker-cask)
+- Recommand Applications From The Official Page
+    - [Fork](fork)
+
 
 ## Recommended Apps in App Store
 
 1. [Magnet](https://apps.apple.com/tw/app/magnet/id441258766?mt=12)
+
 
 ## Is Apple Silicon Ready?
 
 You can check the app which has prepared already in Apple Silicon in the following URL:
 
 https://isapplesiliconready.com/
+
 
 ## Terminal Setting
 
@@ -122,8 +126,18 @@ After installed, you can get a new folder *.config* which is contains iTerm2's i
     # brew install --cask visual-studio-code
 
 
-## [Docker](https://docs.docker.com/desktop/mac/apple-silicon/)
+## [Docker](https://docs.docker.com/desktop/mac/apple-silicon/) (@Cask)
+
+Now (2021-09-17) still not support in native apple sillicon. So, if you want to install and run docker, please install *rosetta-2* first.
+
+    # softwareupdate --install-rosetta
+    # brew install --cask docker
 
 If you really don't know how to use docker, please see my article :) https://medium.com/alberthg-docker-notes
+
+
+## [Fork](https://git-fork.com/)
+
+A Git GUI offerring a visual representation of your repositories. Fork have basic free version, but if your budget is avaliable, buy them a cup of coffee (XDD).
 
 

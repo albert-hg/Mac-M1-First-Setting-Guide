@@ -7,6 +7,9 @@
 - [Homebrew](#homebrew)
     - [Homebrew-Cask](#homebrew-cask-homebrew)
         - [iTerm2](#iterm2-cask)
+        - [Visual Studio Code](#visual-studio-code-cask)
+- Install From Official Page
+    - [Docker](#docker)
 
 ## Recommended Apps in App Store
 
@@ -110,3 +113,17 @@ iTerm2 is a replacement for Terminal. It brings the terminal into something mode
     # brew install --cask iterm2
 
 After installed, you can get a new folder *.config* which is contains iTerm2's information, and also can see Item2 has installed in *Application* file already.
+
+
+## [Visual Studio Code](https://code.visualstudio.com/) (@Cask)
+
+// TODO:  import and export in common setting and extensions
+
+    # brew install --cask visual-studio-code
+
+
+## [Docker](https://docs.docker.com/desktop/mac/apple-silicon/)
+
+If you really don't know how to use docker, please see my article :) https://medium.com/alberthg-docker-notes
+
+
